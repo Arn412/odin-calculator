@@ -48,23 +48,14 @@ function setOperator(o) {
 
 }
 
-function add(x, y) {
-    return x + y;
+function solve() {
+    num2 = parseInt(curNum)
+    ans = operate(num1, num2, operator)
+    updateDisplay(ans)
+
 }
-
-function subtract(x, y) {
-    return x - y;
-}
-
-function multiply(x, y) {
-    return x * y;
-}
-
-function divide(x, y) {
-    return x / y;
-}
-
-
+//i had functions for each operation but i didn't wanna use them because it was more convenient to hardcode 
+//and it takes up less space :D
 function operate(x, y, operator) {
     switch (operator) {
         case "+":
