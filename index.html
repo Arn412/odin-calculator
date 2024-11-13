@@ -13,24 +13,25 @@
 
     <div>
         <div id="numbers">
-            <button onclick="updateDisplay(0)">0</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
+            <button onclick="appendNum(0)">0</button>
+            <button onclick="appendNum(1)">1</button>
+            <button onclick="appendNum(2)">2</button>
+            <button onclick="appendNum(3)">3</button>
+            <button onclick="appendNum(4)">4</button>
+            <button onclick="appendNum(5)">5</button>
+            <button onclick="appendNum(6)">6</button>
+            <button onclick="appendNum(7)">7</button>
+            <button onclick="appendNum(8)">8</button>
+            <button onclick="appendNum(9)">9</button>
         </div>
         <div id="operators">
-            <button>+</button>
-            <button>-</button>
-            <button>*</button>
-            <button>+</button>
+            <button onclick="setOperator('add')">+</button>
+            <button onclick="setOperator('sub')">-</button>
+            <button onclick="setOperator('mult')">*</button>
+            <button onclick="setOperator('div')">/</button>
         </div>
         <button>=</button>
+        <button onclick="clearDisplay()">Clear</button>
     </div>
 
 </body>
